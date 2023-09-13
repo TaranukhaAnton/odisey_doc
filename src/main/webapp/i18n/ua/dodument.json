@@ -1,0 +1,29 @@
+{
+  "odiseyDocApp": {
+    "dodument": {
+      "home": {
+        "title": "Doduments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Створити новий Dodument",
+        "createOrEditLabel": "Створити чи редагувати Dodument",
+        "notFound": "No Doduments found"
+      },
+      "created": "Новий Dodument створений з ідентифікатором {{ param }}",
+      "updated": "Dodument оновлений з ідентифікатором {{ param }}",
+      "deleted": "Dodument видалений з ідентифікатором {{ param }}",
+      "delete": {
+        "question": "Ви впевнені, що хочете видалити Dodument {{ id }}?"
+      },
+      "detail": {
+        "title": "Dodument"
+      },
+      "id": "ID",
+      "description": "Description",
+      "actionsDescription": "Actions Description",
+      "date": "Date",
+      "status": "Status",
+      "comment": "Comment",
+      "attachment": "Attachment"
+    }
+  }
+}

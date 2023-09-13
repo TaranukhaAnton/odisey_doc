@@ -1,0 +1,46 @@
+{
+  "applications": ["odisey_doc"],
+  "changelogDate": "20230913164304",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "dodument",
+  "fields": [
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "actionsDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Status",
+      "fieldValues": "DRAFT,STATUS1,STATUS2,REJECTRD"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Dodument",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "comment",
+      "otherEntityRelationshipName": "dodument",
+      "relationshipName": "comment",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "attachment",
+      "otherEntityRelationshipName": "dodument",
+      "relationshipName": "attachment",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,35 @@
+{
+  "applications": ["odisey_doc"],
+  "changelogDate": "20230913164404",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "comment",
+  "fields": [
+    {
+      "fieldName": "text",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "author",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Comment",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "dodument",
+      "otherEntityRelationshipName": "comment",
+      "relationshipName": "dodument",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

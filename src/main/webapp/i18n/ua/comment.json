@@ -1,0 +1,27 @@
+{
+  "odiseyDocApp": {
+    "comment": {
+      "home": {
+        "title": "Comments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Створити новий Comment",
+        "createOrEditLabel": "Створити чи редагувати Comment",
+        "notFound": "No Comments found"
+      },
+      "created": "Новий Comment створений з ідентифікатором {{ param }}",
+      "updated": "Comment оновлений з ідентифікатором {{ param }}",
+      "deleted": "Comment видалений з ідентифікатором {{ param }}",
+      "delete": {
+        "question": "Ви впевнені, що хочете видалити Comment {{ id }}?"
+      },
+      "detail": {
+        "title": "Comment"
+      },
+      "id": "ID",
+      "text": "Text",
+      "date": "Date",
+      "author": "Author",
+      "dodument": "Dodument"
+    }
+  }
+}

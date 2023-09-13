@@ -1,0 +1,32 @@
+{
+  "applications": ["odisey_doc"],
+  "changelogDate": "20230913164504",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "attachment",
+  "fields": [
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "file",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Attachment",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "dodument",
+      "otherEntityRelationshipName": "attachment",
+      "relationshipName": "dodument",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

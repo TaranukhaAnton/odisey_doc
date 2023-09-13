@@ -1,0 +1,52 @@
+application {
+  config {
+    baseName odisey_doc
+    applicationType monolith
+    packageName ua.gov.odisey
+    authenticationType session
+    prodDatabaseType mysql
+    devDatabaseType mysql
+    clientFramework react
+    cacheProvider ehcache
+    nativeLanguage ua
+    
+
+  }
+  entities *
+  paginate * with pagination
+}
+
+ 
+entity Dodument {
+	description String
+    actionsDescription String
+	date ZonedDateTime
+    status Status
+}
+
+
+entity Comment {
+	text String
+	date ZonedDateTime
+	author String
+}
+
+entity Attachment {
+	description String 
+    file Blob
+}
+
+
+
+
+
+enum Status {
+    DRAFT, STATUS1, STATUS2, REJECTRD
+}
+
+
+
+relationship OneToMany {
+	 Dodument to Comment
+     Dodument to Attachment
+}
